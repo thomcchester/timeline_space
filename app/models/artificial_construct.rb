@@ -1,0 +1,2 @@
+class ArtificialConstruct < ApplicationRecord
+end

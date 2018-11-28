@@ -1,0 +1,2 @@
+class SolarCluster < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class ArtificialConstructsController < ApplicationController
+end

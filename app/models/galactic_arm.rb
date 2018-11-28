@@ -1,0 +1,2 @@
+class GalacticArm < ApplicationRecord
+end

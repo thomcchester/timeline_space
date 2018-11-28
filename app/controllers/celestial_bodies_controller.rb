@@ -1,0 +1,2 @@
+class CelestialBodiesController < ApplicationController
+end

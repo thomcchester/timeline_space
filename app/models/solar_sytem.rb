@@ -1,0 +1,2 @@
+class SolarSytem < ApplicationRecord
+end

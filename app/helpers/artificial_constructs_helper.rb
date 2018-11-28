@@ -1,0 +1,2 @@
+module ArtificialConstructsHelper
+end

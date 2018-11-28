@@ -1,0 +1,2 @@
+class SolarClustersController < ApplicationController
+end

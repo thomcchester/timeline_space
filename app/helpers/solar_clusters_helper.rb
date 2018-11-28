@@ -1,0 +1,2 @@
+module SolarClustersHelper
+end
