@@ -1,0 +1,2 @@
+class SpeciesOriginBlock < ApplicationRecord
+end

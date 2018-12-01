@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181128033445) do
+ActiveRecord::Schema.define(version: 20181201132412) do
 
   create_table "artificial_constructs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -27,6 +27,11 @@ ActiveRecord::Schema.define(version: 20181128033445) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "galatic_clusters", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "galaxies", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -38,6 +43,16 @@ ActiveRecord::Schema.define(version: 20181128033445) do
     t.text "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "status"
+    t.integer "species_origin_id"
+    t.index ["species_origin_id"], name: "index_people_on_species_origin_id"
+  end
+
+  create_table "person_time_lines", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "time_location_id"
+    t.index ["time_location_id"], name: "index_person_time_lines_on_time_location_id"
   end
 
   create_table "solar_clusters", force: :cascade do |t|
@@ -46,6 +61,33 @@ ActiveRecord::Schema.define(version: 20181128033445) do
   end
 
   create_table "solar_sytems", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "species_origin_blocks", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "species_origins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "person_id"
+    t.index ["person_id"], name: "index_species_origins_on_person_id"
+  end
+
+  create_table "stars", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "time_locations", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "time_people", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

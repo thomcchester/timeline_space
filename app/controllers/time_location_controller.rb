@@ -1,0 +1,2 @@
+class TimeLocationController < ApplicationController
+end

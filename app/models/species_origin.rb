@@ -1,0 +1,2 @@
+class SpeciesOrigin < ApplicationRecord
+end

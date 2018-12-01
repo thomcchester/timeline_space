@@ -1,0 +1,2 @@
+class TimePerson < ApplicationRecord
+end

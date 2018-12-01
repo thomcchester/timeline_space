@@ -1,0 +1,2 @@
+class TimePersonController < ApplicationController
+end

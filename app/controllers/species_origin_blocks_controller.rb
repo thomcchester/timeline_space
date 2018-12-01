@@ -1,0 +1,2 @@
+class SpeciesOriginBlocksController < ApplicationController
+end

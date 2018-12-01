@@ -7,7 +7,7 @@
     <th></th>
   </tr>
  
-  <% @persons.each do |person| %>
+  <% @persons.where.not(status: "deleted").each do |person| %>
     <tr>
       <td><%= person.name %></td>
       <td><%= person.summary %></td>
@@ -17,3 +17,4 @@
 </table>
 
 <%= link_to 'New person', new_person_path %>
+<%= link_to 'welcome', controller: 'welcome' %>
