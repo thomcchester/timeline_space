@@ -1,0 +1,17 @@
+<%= form_with(model: galactic_cluster, local: true) do |form| %>
+  <% if galactic_cluster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(galactic_cluster.errors.count, "error") %> prohibited this galactic_cluster from being saved:</h2>
+
+      <ul>
+      <% galactic_cluster.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

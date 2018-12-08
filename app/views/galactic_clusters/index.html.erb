@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Galactic Clusters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @galactic_clusters.each do |galactic_cluster| %>
+      <tr>
+        <td><%= link_to 'Show', galactic_cluster %></td>
+        <td><%= link_to 'Edit', edit_galactic_cluster_path(galactic_cluster) %></td>
+        <td><%= link_to 'Destroy', galactic_cluster, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Galactic Cluster', new_galactic_cluster_path %>

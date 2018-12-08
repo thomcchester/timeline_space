@@ -1,6 +1,6 @@
-class CreateGalaticClusters < ActiveRecord::Migration[5.1]
+class CreateGalacticClusters < ActiveRecord::Migration[5.1]
   def change
-    create_table :galatic_clusters do |t|
+    create_table :galactic_clusters do |t|
 
       t.timestamps
     end

@@ -1,2 +1,0 @@
-module GalaticClustersHelper
-end

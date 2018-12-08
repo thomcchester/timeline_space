@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GalaticArmsControllerTest < ActionDispatch::IntegrationTest
+class GalacticArmsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

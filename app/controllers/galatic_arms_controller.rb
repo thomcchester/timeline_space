@@ -1,2 +1,0 @@
-class GalaticArmsController < ApplicationController
-end

@@ -1,2 +1,0 @@
-class GalaticCluster < ApplicationRecord
-end
