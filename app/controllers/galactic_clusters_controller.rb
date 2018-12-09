@@ -10,6 +10,7 @@ class GalacticClustersController < ApplicationController
   # GET /galactic_clusters/1
   # GET /galactic_clusters/1.json
   def show
+    @galactic_cluster = GalacticCluster.find(params[:id])
   end
 
   # GET /galactic_clusters/new

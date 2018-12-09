@@ -17,6 +17,11 @@ class PersonsController < ApplicationController
       @person = Person.find(params[:id])
     end
 
+    def delete
+      @person = Person.find(params[:id])
+      @person.update_attributes(status: "deleted")
+    end
+
 private
   def person_params
     params.require(:person).permit(:person, :summary)

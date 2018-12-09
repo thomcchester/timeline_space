@@ -10,7 +10,7 @@
   </thead>
 
   <tbody>
-    <% @galactic_clusters.each do |galactic_cluster| %>
+    <% @galactic_clusters.find_each do |galactic_cluster| %>
       <tr>
         <td><%= link_to 'Show', galactic_cluster %></td>
         <td><%= link_to 'Edit', edit_galactic_cluster_path(galactic_cluster) %></td>

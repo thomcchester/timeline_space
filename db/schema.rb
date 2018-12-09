@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181201132412) do
+ActiveRecord::Schema.define(version: 20181209024616) do
 
   create_table "artificial_constructs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20181201132412) do
   end
 
   create_table "celestial_bodies", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
