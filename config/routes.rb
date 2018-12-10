@@ -2,13 +2,13 @@ Rails.application.routes.draw do
   get 'welcome/index'
  
   resources :persons do 
-    post "delete", perrr :person_deleter
+    resources :person_deleter, controller: "person_deleter", only: :update
   end
   
   root 'welcome#index'
   resources :galactic_clusters
-  resources :galactic_arms
-  resources :artificial_constructs
+  resources :galatic_arms
+  resources :artifical_constructs
 
   
 end
