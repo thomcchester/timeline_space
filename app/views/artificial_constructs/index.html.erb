@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Galactic Clusters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @artificial_constructs.find_each do |artificial_construct| %>
+      <tr>
+        <td><%= link_to 'Show', artificial_construct %></td>
+        <td><%= link_to 'Edit', edit_artificial_construct_path(artificial_construct) %></td>
+        <td><%= link_to 'Destroy', artificial_construct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Galactic Cluster', new_artificial_construct_path %>
